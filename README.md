@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TimeCraft
+
+TimeCraft is a SaaS tool designed to help users optimize their discretionary hours using Deep Work principles. Built with Next.js, TypeScript, Tailwind CSS, and Supabase.
+
+## Project Overview
+
+TimeCraft helps users audit their time, visualize discretionary hours, and create structured plans for personal growth, relationships, and intentional leisure. By combining Deep Work's focus principles with structured planning, TimeCraft helps users turn "unused" hours into meaningful progress.
+
+## Features
+
+- **Time Audit & Allocation**: Calculate discretionary hours and visualize time breakdowns
+- **Customizable Templates**: Pre-built templates for common goals (Newsletter Creator, Fitness Enthusiast, etc.)
+- **Deep Work Integration**: Scheduled focus sessions for distraction-free productivity
+
+## Tech Stack
+
+- **Frontend**: Next.js with TypeScript and Tailwind CSS
+- **Backend**: Supabase (Auth, PostgreSQL, Edge Functions)
+- **UI Components**: Custom components built with Tailwind CSS
+
+## Project Structure
+
+```
+timecraft/
+├── app/                  # Next.js app directory
+│   ├── page.tsx          # Landing page
+│   ├── dashboard/        # Dashboard routes
+│   ├── auth/             # Authentication routes
+│   └── api/              # API routes
+├── components/           # React components
+│   ├── ui/               # UI components
+│   ├── forms/            # Form components
+│   └── dashboard/        # Dashboard components
+├── lib/                  # Utility functions
+├── public/               # Static assets
+└── supabase/             # Supabase schema
+```
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Set up Supabase:
+   - Create a Supabase project at [supabase.com](https://supabase.com)
+   - Add your Supabase URL and anon key to `.env.local`
+
+4. Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open [http://localhost:3000](http://localhost:3000) to see the app
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## MVP Development Plan
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Phase 1**: Landing page and auth system
+2. **Phase 2**: Time audit calculator and dashboard
+3. **Phase 3**: Templates system
+4. **Phase 4**: Deep Work timer and focus sessions
 
-## Learn More
+## License
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT

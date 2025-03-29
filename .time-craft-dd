@@ -1,0 +1,89 @@
+Here’s the **revised Design Plan Document** updated to use **21st.dev** for UI design instead of Figma, with references to the knowledge base:  
+
+---
+
+# **TimeCraft Design Plan Document**  
+**Current Date**: Sunday, March 30, 2025  
+
+---
+
+## **1. Executive Summary**  
+TimeCraft is a SaaS tool to optimize discretionary hours using *Deep Work* principles. Built with **Next.js, TypeScript, Tailwind CSS, and Supabase**, it leverages **21st.dev** for UI component design, enabling rapid development of polished interfaces .  
+
+---
+
+## **2. Requirements**  
+### **Functional Requirements**  
+1. **Time Audit & Allocation**  
+   - Users input work/sleep hours; app calculates discretionary time .  
+   - Dashboard visualizes time categories using **21st.dev’s React Tailwind components** (e.g., cards, charts) .  
+
+2. **Deep Work Integration**  
+   - Pomodoro-style timers and distraction blockers with TypeScript validation .  
+
+3. **Customizable Templates**  
+   - Pre-built templates (e.g., "Newsletter Creator") stored in Supabase’s Postgres database .  
+
+---
+
+## **3. Technical Requirements**  
+### **Tech Stack**  
+- **Frontend**: Next.js (TypeScript) with **21st.dev components** for UI .  
+- **Backend**: Supabase (Postgres, Auth, Edge Functions) .  
+- **Component Library**: **21st.dev** (npm for design engineers) .  
+
+### **Prototyping**  
+- Use **21st.dev’s marketplace** to source pre-built React Tailwind components (e.g., dashboards, modals) .  
+- Scaffold the app with:  
+  ```bash  
+  npx create-next-app@latest timecraft -e with-tailwindcss  
+  npm install @21st/dev-components  # Hypothetical package name  
+  ```  
+  (Based on 21st.dev’s GitHub repositories  and Supabase’s Next.js template .)  
+
+---
+
+## **4. Development Plan**  
+### **Phase 1: Discovery & MVP (Weeks 1–6)**  
+- **Week 1–2**:  
+  - Explore **21st.dev’s component library** to select UI elements (dashboards, input fields) .  
+  - Set up Supabase project (database schema, Auth) .  
+- **Week 3–4**:  
+  - Build MVP core using **21st.dev components**:  
+    - Time audit calculator with TypeScript validation .  
+    - Dashboard with Tailwind CSS cards and charts .  
+  - Integrate Supabase Auth for user accounts .  
+
+### **Phase 2: Full Development (Weeks 7–18)**  
+- **Week 7–10**:  
+  - Add **21st.dev’s customizable modals** for Deep Work timer settings .  
+  - Implement habit streaks with Supabase’s Postgres triggers .  
+- **Week 11–14**:  
+  - Use **21st.dev’s drag-and-drop components** for Flex Time scheduling .  
+  - Polish UI with 21st.dev animations and Supabase Edge Functions .  
+
+---
+
+## **5. Marketing & Launch**  
+- **Content Strategy**:  
+  - Publish a case study on "Replacing Figma with 21st.dev for Code-First Design" .  
+  - Share reusable TimeCraft components on 21st.dev’s marketplace .  
+
+---
+
+## **6. Benefits of Using 21st.dev**  
+- **Faster Development**: Pre-built React Tailwind components reduce design-to-code friction .  
+- **Consistency**: Aligns with Tailwind CSS classes used in the app .  
+- **Community-Driven**: Leverage or contribute to 21st.dev’s open-source ecosystem .  
+
+---
+
+## **7. Potential Challenges & Mitigation**  
+- **Challenge**: Limited customizability of 21st.dev components.  
+  - **Mitigation**: Extend components with Tailwind CSS utility classes .  
+- **Challenge**: Learning 21st.dev’s ecosystem.  
+  - **Mitigation**: Follow 21st.dev’s GitHub documentation and community tutorials .  
+
+---
+
+This plan replaces Figma with **21st.dev** to streamline UI development, leveraging its React Tailwind components for a code-first workflow . Let me know if you need component-specific implementation details!
