@@ -11,41 +11,41 @@ export default function Home() {
       {/* Features Section */}
       <section id="features" className="py-20 bg-white">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-12">Why TimeCraft?</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 font-quattrocento text-slate-800">Why TimeCraft?</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <div className="p-6 border rounded-lg shadow-sm">
-              <h3 className="text-xl font-semibold mb-3 flex items-center">
+            <div className="p-6 border rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-semibold mb-3 flex items-center font-quattrocento">
                 <span className="text-green-600 mr-2">✅</span> Time Audit & Allocation
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 font-quicksand">
                 Calculate your discretionary hours in seconds. Visualize where time slips away and reallocate it to what truly matters (learning, relationships, passions).
               </p>
             </div>
             
-            <div className="p-6 border rounded-lg shadow-sm">
-              <h3 className="text-xl font-semibold mb-3 flex items-center">
+            <div className="p-6 border rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-semibold mb-3 flex items-center font-quattrocento">
                 <span className="text-green-600 mr-2">✅</span> Deep Focus Sessions
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 font-quicksand">
                 Block distractions and dive into high-value work. Pomodoro-style timers + science-backed focus strategies keep you in the zone.
               </p>
             </div>
             
-            <div className="p-6 border rounded-lg shadow-sm">
-              <h3 className="text-xl font-semibold mb-3 flex items-center">
+            <div className="p-6 border rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-semibold mb-3 flex items-center font-quattrocento">
                 <span className="text-green-600 mr-2">✅</span> Habit Stacking Made Simple
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 font-quicksand">
                 Build streaks for workouts, learning, or chores. No more guilt—just progress.
               </p>
             </div>
             
-            <div className="p-6 border rounded-lg shadow-sm">
-              <h3 className="text-xl font-semibold mb-3 flex items-center">
+            <div className="p-6 border rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-semibold mb-3 flex items-center font-quattrocento">
                 <span className="text-green-600 mr-2">✅</span> Flex Time Buffer
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 font-quicksand">
                 Life happens. Reserve hours for emergencies or spontaneous fun—without derailing your goals.
               </p>
             </div>
@@ -54,12 +54,12 @@ export default function Home() {
       </section>
 
       {/* Testimonial Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-amber-50">
         <div className="container mx-auto px-6 text-center">
-          <blockquote className="text-2xl italic text-gray-700 mb-8 max-w-3xl mx-auto">
+          <blockquote className="text-2xl italic text-gray-700 mb-8 max-w-3xl mx-auto font-quattrocento">
             &quot;TimeCraft changed how I see free time. I launched a newsletter and fixed my sleep—all in 6 weeks.&quot;
           </blockquote>
-          <p className="text-lg text-gray-600">— Beta User</p>
+          <p className="text-lg text-gray-600 font-quicksand">— Beta User</p>
         </div>
       </section>
 
@@ -108,14 +108,14 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-16 bg-indigo-600 text-white">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-6">Still scrolling?</h2>
-          <p className="text-xl mb-8 max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold mb-6 font-quattrocento">Still scrolling?</h2>
+          <p className="text-xl mb-8 max-w-3xl mx-auto font-quicksand">
             Your future self will thank you.
           </p>
           <Button 
             size="lg"
             variant="outline" 
-            className="bg-transparent hover:bg-white hover:text-indigo-600 text-white border-white"
+            className="bg-transparent hover:bg-white hover:text-indigo-600 text-white border-white font-quicksand"
           >
             Start optimizing your time
           </Button>
